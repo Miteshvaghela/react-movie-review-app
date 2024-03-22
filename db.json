@@ -1,0 +1,22 @@
+{
+    "movies" : [
+        {
+            "id":"1",
+            "username":"Mitesh Vaghela",
+            "name":"Spiderman 1",
+            "rating":"3",
+            "favorite":true,
+            "email":"test@funtechstic.com",
+            "comment":"Scifi movie"
+        },
+        {
+            "id":"2",
+            "username":"John Smith",
+            "name":"Spiderman 2",
+            "rating":"4",
+            "favorite":false,
+            "email":"test@funtechstic.com",
+            "comment":"Amazing movie"
+        }
+    ]
+}
