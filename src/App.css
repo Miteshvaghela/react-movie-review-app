@@ -7,11 +7,17 @@ body{
     box-sizing: border-box;
     padding:0px;
     margin:0px;
+    background: linear-gradient(#b38de2, #ecb953) !important;
+    background-repeat: repeat;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-.appBg{
-    background: linear-gradient(#fff, #ecb953) !important;
+.app-btn{
+    background: linear-gradient(#b38de2, #ecb953) !important;
+    font-weight: bold !important;
 }
+
 
 .bg-red{
     color: #ecb953 !important;
@@ -23,4 +29,16 @@ body{
 }
 .fav{
     border-left: 4px solid blue;
+}
+.ico-times{
+    position:absolute;
+    right:20px;
+    top : 20px;
+    color:red;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+}
+.movie-item:hover .ico-times{
+    display: inline;
 }

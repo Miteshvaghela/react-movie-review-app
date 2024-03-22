@@ -7,7 +7,7 @@ function Header({appTitle, btnObj}) {
             <h1>{appTitle}</h1>
         </div>
         <div className="right">
-            <button className="btn btn-primary " onClick={btnObj.handle}>{btnObj.title}</button>
+            <button className="btn app-btn " onClick={btnObj.handle}>{btnObj.title}</button>
         </div>
     </header>
   )

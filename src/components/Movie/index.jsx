@@ -3,9 +3,10 @@ import { FaRegStar } from 'react-icons/fa6';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
+import { useCol } from 'react-bootstrap/esm/Col';
 
 
-const Movie = ({}) => {
+const Movie = ({ createMovieRecord }) => {
 
     const [rating, setRating] = useState(1);
     const [movieStars, setMovieStars] = useState([1]);
@@ -18,17 +19,56 @@ const Movie = ({}) => {
 
 
 
+
     const handleMovieForm = (e) => {
         e.preventDefault();
+        const errors = []; 
 
-        console.log(username.trim().length);
+        if(username.trim().length < 3){
+            errors.push('Please enter username');
+        }else if(email.trim().length === 0 || email.trim().length < 3 || !isEmail(email)){
+            errors.push('Please enter email');
+        }else if(movieTitle.trim().length === 0){
+            errors.push('Please enter Movie title.')
+        }else{
+            // validation success create an object from the values and send it to component.
 
-        
+            
+                const obj = {
+                    id : Math.ceil(Math.random() * (10000000000 - 1) + 1).toString(),
+                    username : username,
+                    name : movieTitle,
+                    rating : rating,
+                    favorite : fav,
+                    email : email,
+                    comment : userComment
+                }
+                createMovieRecord(obj);
 
+                // reset all the input filds 
+
+
+                setUsername('');
+                setEmail('');
+                setMovieTitle('');
+                setFav(false);
+                setRating(1);
+                setUserComment('');
+        }
+
+
+        if(errors.length > 0){
+            alert(errors.join('<br/>'));
+            return false;
+        }
+ 
 
     }
    
     
+    const isEmail = ( email ) => {
+        return /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
+    }
 
 
     const updateRating = (e) => {
@@ -47,11 +87,11 @@ const Movie = ({}) => {
             <Form onSubmit={event => handleMovieForm(event)}>
             <Form.Group className="mb-3" controlId="username">
                 <Form.Label>Username</Form.Label>
-                <Form.Control type="text" value={username} onChange={e => setUsername(e.target.value)} placeholder="Enter username" required/>
+                <Form.Control type="text" value={username} onChange={e => setUsername(e.target.value)} placeholder="Enter username" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="email">
                 <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" value={email} onChange={e => setEmail(e.target.value)} required/>
+                <Form.Control type="text" placeholder="Enter email" value={email} onChange={e => setEmail(e.target.value)} />
             </Form.Group>
             <Form.Group className="mb-3" controlId="movie_title">
                 <Form.Label>Movie Title</Form.Label>
@@ -72,7 +112,7 @@ const Movie = ({}) => {
             </Form.Group>
             <Form.Group className="mb-3">
                 <Form.Label>Comment</Form.Label>
-                <Form.Control as="textarea" name="comment" placeholder="Enter comment (if any)" rows={2} onChange={e => setUserComment(e.target.value)}>{userComment}</Form.Control>
+                <Form.Control as="textarea" name="comment" placeholder="Enter comment (if any)" rows={2} onChange={e => setUserComment(e.target.value)} value={userComment}/>
             </Form.Group>
             <Form.Group className="mb-3">
                 <Button as="input" type="submit" value="Save" />

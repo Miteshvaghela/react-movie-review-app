@@ -1,22 +1,85 @@
 {
-    "movies" : [
-        {
-            "id":"1",
-            "username":"Mitesh Vaghela",
-            "name":"Spiderman 1",
-            "rating":"3",
-            "favorite":true,
-            "email":"test@funtechstic.com",
-            "comment":"Scifi movie"
-        },
-        {
-            "id":"2",
-            "username":"John Smith",
-            "name":"Spiderman 2",
-            "rating":"4",
-            "favorite":false,
-            "email":"test@funtechstic.com",
-            "comment":"Amazing movie"
-        }
-    ]
+  "movies": [
+    {
+      "id": "1",
+      "username": "Mitesh Vaghela",
+      "name": "Spiderman 1",
+      "rating": "3",
+      "favorite": true,
+      "email": "test@funtechstic.com",
+      "comment": "Scifi movie"
+    },
+    {
+      "id": "2",
+      "username": "John Smith",
+      "name": "Spiderman 2",
+      "rating": "4",
+      "favorite": true,
+      "email": "test@funtechstic.com",
+      "comment": "Amazing movie"
+    },
+    {
+      "id": "65",
+      "username": "Michael Jackson",
+      "name": "Incredible Hulk",
+      "rating": "5",
+      "favorite": true,
+      "email": "michael.jackson@funtechstic.com",
+      "comment": "An amazing movie and I love the power of hulk."
+    },
+    {
+      "id": "3967550787",
+      "username": "Mitesh vaghela",
+      "name": "Intersteller",
+      "rating": "5",
+      "favorite": false,
+      "email": "mitesh.vaghela@funtechstic.com",
+      "comment": "Mesmerizing sci-fi movie, I love Christopher Nolan's work and he's a brilliant director. \nI would love to meet him personally for future work."
+    },
+    {
+      "id": "3402006129",
+      "username": "Mitesh Vaghela",
+      "name": "Dunkirk",
+      "rating": "5",
+      "favorite": true,
+      "email": "mitesh.vaghela@funtechstic.com",
+      "comment": "Amazing war movie, \nMust watch in theaters for an immersive experience."
+    },
+    {
+      "id": "1771497466",
+      "username": "Mitesh vaghela",
+      "name": "Ritual",
+      "rating": "4",
+      "favorite": false,
+      "email": "mitesh.vaghela@funtechstic.com",
+      "comment": "An amazing Horror movie \nthat must be watched if you're a horror movie fan like me !!!! :D"
+    },
+    {
+      "id": "5915070863",
+      "username": "Mitesh vaghela",
+      "name": "Avengers - End game",
+      "rating": "5",
+      "favorite": false,
+      "email": "mitesh.vaghela@funtechstic.com",
+      "comment": "Amazing movie I love all the characters from the movie. \nTony and thor are my fav !!!"
+    },
+    {
+      "id": "5341570954",
+      "username": "Mitesh vaghela",
+      "name": "Flop movie 1",
+      "rating": 1,
+      "favorite": true,
+      "email": "mitesh.vaghela@funtechstic.com",
+      "comment": "Bad movie"
+    },
+    {
+      "id": "5378158623",
+      "username": "Mitesh vaghela",
+      "name": "Tumbad",
+      "rating": "4",
+      "favorite": true,
+      "email": "mitesh.vaghela@funtechstic.com",
+      "comment": "Very good Indian horror movie Must watch"
+    }
+  ]
 }
