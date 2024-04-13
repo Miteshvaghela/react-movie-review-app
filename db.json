@@ -28,15 +28,6 @@
       "comment": "An amazing movie and I love the power of hulk."
     },
     {
-      "id": "3967550787",
-      "username": "Mitesh vaghela",
-      "name": "Intersteller",
-      "rating": "5",
-      "favorite": false,
-      "email": "mitesh.vaghela@funtechstic.com",
-      "comment": "Mesmerizing sci-fi movie, I love Christopher Nolan's work and he's a brilliant director. \nI would love to meet him personally for future work."
-    },
-    {
       "id": "3402006129",
       "username": "Mitesh Vaghela",
       "name": "Dunkirk",
@@ -73,13 +64,13 @@
       "comment": "Bad movie"
     },
     {
-      "id": "5378158623",
-      "username": "Mitesh vaghela",
-      "name": "Tumbad",
-      "rating": "4",
+      "id": "6255633555",
+      "username": "New Movie",
+      "name": "NewMovie",
+      "rating": "3",
       "favorite": true,
-      "email": "mitesh.vaghela@funtechstic.com",
-      "comment": "Very good Indian horror movie Must watch"
+      "email": "test@yahoo.com",
+      "comment": "This is a movie comment "
     }
   ]
 }
