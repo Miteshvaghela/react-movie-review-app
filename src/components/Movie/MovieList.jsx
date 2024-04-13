@@ -1,6 +1,4 @@
-import React from 'react';
 import MovieItem from './MovieItem';
-
 const MovieList = ({movies, toggleFav, deleteMovieItem}) =>  {
   return (
     <>
@@ -17,5 +15,4 @@ const MovieList = ({movies, toggleFav, deleteMovieItem}) =>  {
     </>
   )
 }
-
 export default MovieList
