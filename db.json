@@ -71,6 +71,15 @@
       "favorite": true,
       "email": "test@yahoo.com",
       "comment": "This is a movie comment "
+    },
+    {
+      "id": "9129155512",
+      "username": "Miteshvaghela",
+      "name": "A quiet place 3",
+      "rating": "5",
+      "favorite": true,
+      "email": "miteshvaghela@funtechstic.com",
+      "comment": "An amazing movie Must watch"
     }
   ]
 }
