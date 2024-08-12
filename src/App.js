@@ -35,7 +35,7 @@ function App() {
         let response = await fetch(url, {
           method : 'GET',
           headers : {
-            'Content-type' : 'application/json'
+            'accept' : 'application/json'
           }
         });
 
@@ -105,8 +105,8 @@ function App() {
   }
 
   return (
-    <div className="app appBg vh-100 vw-100 ">
-      <div className="container my-0 shadow shadow-lg bg-light-subtle">
+    <div className="app appBg vh-100 vw-100 p-5">
+      <div className="container my-0 shadow shadow-lg bg-light-subtle rounded-2">
         <div className="p-4">
             <Header btnObj={btnObj} appTitle={'Movie Review App'}/>
             {(btnTitle === 'Close') && <Movie createMovieRecord={createMovieRecord}/>}
